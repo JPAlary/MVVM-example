@@ -12,6 +12,7 @@ This project is a simple example of MVVM and network foundation on iOS using:
 - View holds view model instance and do the binding between its UI elements and the `Driver` exposed by the View Model.
 - Model are the part for all dependencies which manipulates data, business objects, use third party like network, etc...
 - Model are abstract by protocol and are always injected in the View Model.
+- Data layer follow the Repository pattern and abstracted by `Repository` protocol.
 - About folders hierarchy:
 	- Foundation contains all transversed extensions/dependencies.
 	- Feature contains ViewController/View/ViewModel for each feature of the app.
